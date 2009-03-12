@@ -1,5 +1,9 @@
 Revision history for Tie-Formatted
 
-0.0.1  Tue Feb  7 10:51:42 2006
-       Initial release.
+0.02  Tue Feb  7 12:22:19 PST 2006
+	- Credit where credit is due added to the documentation.
+	- Fixed MANIFEST to include all the tests.
+
+0.01  Tue Feb  7 10:51:42 2006
+	- Initial release.
 

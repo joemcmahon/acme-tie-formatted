@@ -1,6 +1,6 @@
 package Tie::Formatted;
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use warnings;
 use strict;
@@ -186,3 +186,21 @@ RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
 FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGES.
+
+=head1 CREDITS
+
+Sean Burke, for saying he wanted this.
+
+Eric J. Roode, for Tie::Comma (which this is derived from).
+
+Mark-Jason Dominus, for Interpolate.
+
+=over 4
+
+"We are like dwarfs sitting on the shoulders of giants. We see more 
+than they do, indeed even farther; but not because our sight is 
+better than theirs or because we are taller than they. Our sight 
+is enhanced because they raise us up and increase our stature by 
+their enormous height." - Bernard de Chartes
+
+=back
