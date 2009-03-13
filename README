@@ -1,4 +1,4 @@
-Tie-Formatted version 0.0.1
+Acme-Tie-Formatted version 0.03
 
 Creates a global hash, %format,  that you can use to embed sprintf formatting
 in a standard print(), like this:
@@ -31,7 +31,7 @@ None.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2006, Joe McMahon
+Copyright (C) 2006, 2009 Joe McMahon
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
