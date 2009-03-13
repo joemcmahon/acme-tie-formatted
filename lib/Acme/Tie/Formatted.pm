@@ -1,11 +1,9 @@
-package Tie::Formatted;
-
-$VERSION = '0.02';
-
-use warnings;
+package Acme::Tie::Formatted;
 use strict;
+use warnings;
 use Carp;
-use Smart::Comments;
+
+our $VERSION = '0.03';
 
 my $first_char = qr/[_a-zA-Z]/;
 my $next_char  = qr/[_a-zA-Z0-9]/;
@@ -14,6 +12,7 @@ my $ok_name    = qr/^$first_char($next_char)*$/;
 our %format;
 
 sub import {
+  $DB::single=1;
   my ($class, $arg) = @_;
   my $hash_name = "format";
 
@@ -21,12 +20,14 @@ sub import {
     $hash_name = $arg;
   }
 
-  no strict 'refs';
-  *{caller() . "::$hash_name"} = \%format;
-}
+  {
+    no strict 'refs';
+    *{"main::$hash_name"} = \%format;
+  }
 
-# Connect the magic to the hash.
-tie %format, 'Tie::Formatted';
+  # Connect the magic to the hash.
+  tie %format, 'Acme::Tie::Formatted';
+}
 
 
 sub TIEHASH {
@@ -72,12 +73,12 @@ __END__
 
 =head1 NAME
 
-Tie::Formatted - embed sprintf() formatting in regular print()
+Acme::Tie::Formatted - embed sprintf() formatting in regular print()
 
 
 =head1 VERSION
 
-This document describes Tie::Formatted version 0.01
+This document describes Acme::Tie::Formatted version 0.03
 
 
 =head1 SYNOPSIS

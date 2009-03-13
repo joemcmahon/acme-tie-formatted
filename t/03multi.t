@@ -1,7 +1,7 @@
 use Test::More tests=>2;
 
 BEGIN {
-  use_ok qw(Tie::Formatted);
+  use_ok qw(Acme::Tie::Formatted);
 }
 
 my $expected;

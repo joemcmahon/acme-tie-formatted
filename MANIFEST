@@ -1,9 +1,9 @@
 Build.PL
 Changes
-lib/Tie/Formatted.pm
+lib/Acme/Tie/Formatted.pm
 Makefile.PL
-MANIFEST
-META.yml			# Will be created by "make dist"
+MANIFEST			This list of files
+META.yml
 README
 t/00.load.t
 t/01can.t

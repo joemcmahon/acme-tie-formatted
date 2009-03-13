@@ -1,5 +1,9 @@
 Revision history for Tie-Formatted
 
+0.03  Thu Mar 12 22:05:57 PDT 2009
+	- Changed name to Acme::Tie::Formatted because, let's face it,
+	  this is kind of a silly module.
+
 0.02  Tue Feb  7 12:22:19 PST 2006
 	- Credit where credit is due added to the documentation.
 	- Fixed MANIFEST to include all the tests.

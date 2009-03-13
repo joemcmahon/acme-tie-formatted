@@ -1,7 +1,7 @@
 use Test::More tests => 1;
 
 BEGIN {
-use_ok( 'Tie::Formatted' );
+use_ok( 'Acme::Tie::Formatted' );
 }
 
-diag( "Testing Tie::Formatted $Tie::Formatted::VERSION" );
+diag( "Testing Acme::Tie::Formatted $Acme::Tie::Formatted::VERSION" );
