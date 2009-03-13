@@ -3,7 +3,7 @@ Acme-Tie-Formatted version 0.03
 Creates a global hash, %format,  that you can use to embed sprintf formatting
 in a standard print(), like this:
 
-  print "The value is $format{"09.3d", $value}\n";
+  print "The value is $format{$value, "09.3d"}\n";
 
 INSTALLATION
 
