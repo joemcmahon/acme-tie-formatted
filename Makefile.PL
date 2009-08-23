@@ -7,6 +7,7 @@ WriteMakefile(
     AUTHOR              => 'Joe McMahon <mcmahon@yahoo-inc.com>',
     VERSION_FROM        => 'lib/Acme/Tie/Formatted.pm',
     ABSTRACT_FROM       => 'lib/Acme/Tie/Formatted.pm',
+    LICENSE             => 'artistic',
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,

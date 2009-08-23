@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $first_char = qr/[_a-zA-Z]/;
 my $next_char  = qr/[_a-zA-Z0-9]/;
@@ -83,7 +83,7 @@ This document describes Acme::Tie::Formatted version 0.03
 
 =head1 SYNOPSIS
 
-    use Tie::Formatted;
+    use Acme::Tie::Formatted;
     print "The value is $format{$number, "%3d"} ",
           "(or $format{$number, "%04x"} in hex)\n";
 
@@ -106,13 +106,13 @@ If you prefer, you can specify a different name for the magical
 formatting hash by supplying it as as argument when C<use>ing the
 module:
 
-  use Tie::Formatted qw(z);
+  use Acme::Tie::Formatted qw(z);
 
 This makes C<%z> the magic hash instead.
 
   print "This is hex: $z{255, "%04x"}\n";
 
-C<Tie::Formatted> currently supports only one format in the final 
+C<Acme::Tie::Formatted> currently supports only one format in the final 
 argument; this may change if there is demand for it.
 
 =head1 DIAGNOSTICS
@@ -126,7 +126,7 @@ exists in it, delete an element, empty out the hash, or
 access the key in it. 
 
 None of these operations do anything; only reading elements
-of the ahsh works.
+of the hash works.
 
 =back
 
@@ -145,7 +145,8 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
+Fixed in 0.04: A number of POD errors and typos. Thanks to Frank Wiegand
+(frank.weigand@gmail.com) for the patch.
 
 Please report any bugs or feature requests to
 C<bug-tie-formatted@rt.cpan.org>, or through the web interface at
@@ -159,7 +160,7 @@ Joe McMahon  C<< <mcmahon@cpan.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2006, Joe McMahon C<< <mcmahon@cpan.org> >>. All rights reserved.
+Copyright (c) 2009, Joe McMahon C<< <mcmahon@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
