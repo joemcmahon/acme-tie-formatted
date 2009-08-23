@@ -4,7 +4,7 @@ use Module::Build;
 
 my $builder = Module::Build->new(
     module_name         => 'Acme::Tie::Formatted',
-    license             => 'perl',
+    license             => 'artistic',
     dist_author         => 'Joe McMahon <mcmahon@yahoo-inc.com>',
     dist_version_from   => 'lib/Acme/Tie/Formatted.pm',
     requires => {
