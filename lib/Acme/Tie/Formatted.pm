@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $first_char = qr/[_a-zA-Z]/;
 my $next_char  = qr/[_a-zA-Z0-9]/;
